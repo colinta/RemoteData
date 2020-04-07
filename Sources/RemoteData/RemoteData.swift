@@ -2,7 +2,7 @@ public enum RemoteData<T> {
     case notAsked
     case loading
     case success(T)
-    case failure(Error)
+    case failure(Swift.Error)
 
     var isNotAsked: Bool {
         switch self {
